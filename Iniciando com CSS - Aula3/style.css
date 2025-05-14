@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+html,body{
+    height: 100%;
+}
+
+.lista, .lista2{
+    list-style-position: inside;
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.lista li, .lista2 li{
+    color: black;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.lista .item3, .lista2 .item3{
+    font-weight: bold;
+}
+
+ol{
+    list-style-position: inside;
+}
+
+ol > li{
+    color: red;
+}
+
+.um{
+    width: 800px;
+    height: 800px;
+    background-color: black;
+}
+.um >.dois{
+    background-color: blue;
+    width: 500px;
+    height: 500px;
+}
+.um > .tres{
+    background-color: aliceblue;
+    width: 200px;
+    height: 200px;
+}
+
+.um >.tres > .quatro{
+    background-color: darkgoldenrod;
+    width: 100px;
+    height: 100px;
+}
