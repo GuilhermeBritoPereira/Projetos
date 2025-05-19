@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: #fff;
+    padding: 20px;
+    color: #000;
+}
+
+/*Container principal*/
+
+header, main {
+    max-width: 960px;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+/*Cabeçalho*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: none;
+}
+
+.logo{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    margin: 0 5px;
+}
+
+.intro{
+ text-align: center;
+ padding: 40px 0;
+ border-top: 1px solid black;
+ border-bottom: 1px solid black;
+
+}
+
+.intro h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.intro p{
+    font-size: 15px;
+    color: gray;
+    
+}
+
+/*Conteudo principal 3 colunas*/
+
+.main-contant{
+    display: flex;
+    border-bottom: 1px solid black;
+}
+
+.column{
+    flex: 1;
+    padding: 20px;
+    border-right: 1px solid black;
+}
+
+.column:last-child{
+    border-right: none;
+}
+
+.column h2{
+margin-bottom: 10px;
+font-size: 18px;
+}
+
+.column ul{
+    list-style: none;
+    padding-left:0;
+}
+
+.column li{
+    margin-bottom: 8px;
+    
+}
+.column .size {
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    padding-bottom: 25px;
+    
+}
+.column a{
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.column p{
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*Reviews*/
+
+.reviews{
+    padding: 0 40px;
+    margin: 15px 0;
+    
+}
+
+.reviews h2{
+    padding-bottom: 20px;
+}
+
+.review-box{
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.review{
+    flex: 1;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 15px;
+    text-align: left;
+    background-color: #f9f9f9;
+}
+
+.review p{
+    margin-bottom: 10px;
+    
+}
+.review .color{
+    color: gray;
+}
+
+
+footer{
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    border-top: none;
+}
