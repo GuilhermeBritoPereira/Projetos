@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.redimensionado {
+    width: 50%;
+    height: 300px;
+    border: 2px solid black;
+}
