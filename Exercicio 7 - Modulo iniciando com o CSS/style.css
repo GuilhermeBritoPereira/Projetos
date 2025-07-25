@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.number {
+    list-style-position: inside;
+}
+
+.number li {
+    margin-bottom: 10px;
+}
+
+.number li::marker {
+    color: red;
+}
