@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #fff;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+nav{
+    font-size: 12px;
+    margin-bottom: 20px;
+    
+}
+
+a{
+    font-size: 15px;
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+}
+
+.intro{
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid black;
+}
+
+.projects, .experience, .education, .reviews{
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+
+}
+
+h2{
+    font-size:16px;
+    margin-bottom:10px ;
+
+}
+
+
+li{
+    list-style: none;
+    background-color: #f0f0f0;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+}   
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.review {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  background: #f9f9f9;
+}
+
+footer {
+  text-align: center;
+  border-top: 1px solid #000;
+  padding-top: 10px;
+  font-size: 12px;
+}

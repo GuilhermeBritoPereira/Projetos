@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    justify-content: center;
+}
+
+.card{
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.card.dark{
+    background-color: #1a1a1a;
+    color: #fff;
+}
+.card.dark.wide{
+    padding: 10px;
+    width: 570px;
+    height: 200px;
+    
+}
+
+.card.bordered {
+  border: 2px solid black;
+}
+
+.card.wide {
+    width: 600px;
+    text-align: left;
+    
+}
+
+.card .quote {
+    margin-bottom: 20px;
+}
+
+.card .author img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.card .stars {
+    color: gold;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card.image-left {
+    width: 200px;
+    height:200px ;
+    padding: 0;
+    overflow: hidden;
+}
+
+.card.image-left img{
+    width: 200px;
+    border-radius: 20px;
+    display: block;
+    
+}
+
+.carousel-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+    
+
+}
+
+.card.carousel , .quote1{
+    width: 550px;
+    text-align: center; 
+    padding: 20px;
+}
+
+.carousel-footer .avatars img{
+    width: 40px;
+    border-radius: 50%;
+    opacity: 0.6;
+}
+
+.carousel-footer .avatars .highlighted {
+    opacity: 1;
+    border: 2px solid #000;
+}
+
+.arrow{
+    font-size: 2rem;
+    cursor:pointer
+}
+
+.name{
+    font-weight: bold;
+}
+

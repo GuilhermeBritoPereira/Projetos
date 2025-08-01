@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Accessible Form UI </title>
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body>
+
+    <div class="container">
+        <form class="form">
+            <!--Lado esquerdo do Form-->
+            <div class="form-left">
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" placeholder="What should we call you?">
+
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" value="john@doe.com" class="input-error"/>
+                    <span class="erro-msg">Email is already taken</span>
+
+                </div>
+
+                <div class="form-group password-group">
+                    <label for="enter-password">Enter Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="password" placeholder="xxxxxxxxx">
+                        <span class="eye-icon"><img src="img/icons8-visível-30.png" alt=""></span>
+                    </div>
+                    
+
+                </div>
+
+                <div class="form-group password-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <div class="password-wrapper">
+                         <input type="text" id="confirm-password" placeholder="xxxxxxxx">
+                         <span class="eye-icon"><img src="img/icons8-visível-30.png" alt=""></span>
+                    </div>
+                   
+
+                </div>
+
+                <button type="submit" class="btn">Update Profile</button>
+
+            </div>
+
+        <div class="form-right">
+
+        
+            <div class="progress-circle">
+                <strong>65%</strong>
+            </div>
+
+
+            <h3>Profile Completeness</h3>
+
+            <ul class="checklist">
+                <li class="checked">Create Account</li>
+                <li class="checked">Update Roadmap Progress</li>
+                <li class="checked">Setup Public Profile</li>
+                <li>Complete your firt project</li>
+                <li>Invite your Friends</li>
+
+            </ul>
+
+        </div>
+
+        </form>
+
+       
+    </div>
+    
+</body>
+</html>
