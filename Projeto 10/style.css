@@ -1,0 +1,119 @@
+/* Faço um 'reset' básico pra tirar as margens e paddings padrão dos navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais para a página inteira */
+body {
+    font-family: 'Segoe UI', sans-serif; /* Uma fonte limpa e moderna */
+    background-color: #f0f2f5; /* Fundo cinza claro */
+    color: #333; /* Cor do texto padrão */
+    display: flex; /* Uso flexbox para centralizar o conteúdo */
+    justify-content: center;
+    padding-top: 50px; /* Um espaço no topo da página */
+}
+
+/* Estilo da 'caixa' principal da aplicação */
+.container {
+    width: 100%;
+    max-width: 600px; /* A caixa não passa de 600px de largura */
+    background-color: #ffffff; /* Fundo branco pra contrastar */
+    padding: 25px;
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave pra dar profundidade */
+}
+
+/* Estilo do título principal */
+header h1 {
+    text-align: center; /* Centralizo o texto */
+    color: #2c3e50; /* Uma cor mais escura pro título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+/* Deixo o formulário flexível para alinhar o input e o botão */
+#new-task-form {
+    display: flex;
+    gap: 10px; /* Espaço entre o input e o botão */
+}
+
+/* Estilo do campo de texto */
+#task-input {
+    flex: 1; /* Esse é o truque pra ele crescer e ocupar todo o espaço disponível */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none; /* Tiro a borda padrão que aparece quando clico */
+}
+
+/* Mudo a cor da borda do input quando ele está focado (selecionado) */
+#task-input:focus {
+    border-color: #3498db;
+}
+
+/* Estilo do botão de adicionar */
+#task-submit-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #3498db; /* Cor de destaque */
+    color: #fff; /* Texto branco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* O mouse vira uma 'mãozinha' */
+    transition: background-color 0.3s; /* Efeito suave na cor */
+}
+
+/* Mudo a cor do botão quando o mouse passa por cima */
+#task-submit-button:hover {
+    background-color: #2980b9;
+}
+
+/* Estilo para a lista de tarefas */
+#tasks-container {
+    list-style: none; /* Tiro os 'pontinhos' da lista */
+    margin-top: 20px;
+}
+
+/* ATENÇÃO: Estilos para os itens que o JAVASCRIPT vai criar. */
+/* Eles não existem no HTML, mas já deixo o estilo preparado. */
+.task-item {
+    display: flex;
+    justify-content: space-between; /* Um item pra cada lado */
+    align-items: center; /* Alinha verticalmente no centro */
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #3498db; /* Uma barrinha azul na esquerda */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Regra especial: quando um 'task-item' TAMBÉM tiver a classe 'completed'... */
+.task-item.completed .text {
+    text-decoration: line-through; /* ...o texto dentro dele ganha um risco... */
+    color: #95a5a6; /* ...e fica cinza. */
+}
+
+/* Estilo para o texto da tarefa */
+.task-item .text {
+    flex: 1;
+    cursor: pointer; /* Indico que o texto é clicável */
+}
+
+/* Estilo para os botões de ação (ex: excluir) */
+.task-item .actions .delete-btn {
+    background-color: #e74c3c; /* Vermelho */
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+/* Efeito de 'hover' para os botões de ação */
+.task-item .actions .delete-btn:hover {
+    opacity: 0.8;
+}
