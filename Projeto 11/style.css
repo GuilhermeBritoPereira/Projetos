@@ -1,0 +1,129 @@
+/* Importa a fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* --- Reset e Estilos Globais --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Usa a nova fonte */
+    background: linear-gradient(to top, #6dd5ed, #2193b0); /* Gradiente de céu azul mais vibrante */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* --- Contêiner Principal --- */
+.weather-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 20px; /* Cantos mais arredondados */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 470px;
+}
+
+/* --- Cabeçalho e Caixa de Busca --- */
+.search-header h1 {
+    text-align: center;
+    color: #1c3d5a;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+}
+
+#city-input {
+    flex: 1;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#city-input:focus {
+    border-color: #2193b0; /* Cor da borda ao clicar */
+}
+
+#search-btn {
+    padding: 0 25px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #1c3d5a; /* Azul escuro corporativo */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search-btn:hover {
+    background-color: #2c5b8a;
+}
+
+/* --- Área de Exibição dos Resultados --- */
+.hidden {
+    display: none;
+}
+
+#weather-data {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#city-name {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #1c3d5a;
+}
+
+#weather-icon {
+    width: 120px;
+    height: 120px;
+    margin-top: -10px; /* Sobe um pouco o ícone para um visual mais integrado */
+}
+
+#temperature {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #111;
+    margin: 0;
+}
+
+#weather-description {
+    font-size: 1.2rem;
+    color: #555;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+#details-container {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.detail-box p:first-child {
+    font-weight: 500;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.detail-box p:last-child {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+}
